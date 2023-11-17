@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, transparent 0%, #F27706 90%, #FC7900 100%), url(../img/pizza_back\ 2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+:root{
+    --text-font: 'Roboto', sans-serif;
+    --logo-font:'Pattaya', sans-serif;
+    --red:#F01212;
+    --red2: #F93030;
+    --white: #ffffff;
+    --grey: #C4C4C4;
+    --orange: #F27706;
+}
+
+@media(max-width: 412px){
+    header{
+        width: 100vw;
+        height: 20vh;
+        font-family: var(--logo-font );
+        color: var(--white);
+        padding-top: 10%;
+        padding-left: 6%;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        width: 15vw;
+    }
+    .logo img{
+        width: 35vw;
+    }
+    .logo h1{
+        place-self: end;
+        font-size: 8vw;
+        font-weight: 400;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 45vh;
+        font-family: var(--text-font);
+        color: var(--white);
+        justify-content:end;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        width: 65vw;
+        padding-left: 6%;
+    }
+    .text h2{
+        font-size: 10vw;
+    }
+    .text p{
+        font-size: 4vw;
+        width: 85vw;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 30vh;
+    }
+
+    .btnComecar{
+        width: 75vw;
+        height: 6vh;
+        background-color: var(--white);
+        font-family: var(--text-font);
+        font-size: 3.5vw;
+        font-weight: 800;
+        color: var(--orange);
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        place-items: center;
+        border-radius: 10px;
+        place-self: end;
+    }
+
+}
+    

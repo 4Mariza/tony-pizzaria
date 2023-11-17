@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, transparent 0%, #F27706 90%, #FC7900 100%), url(../img/pizza_back\ 2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+:root{
+    --text-font: 'Roboto', sans-serif;
+    --logo-font:'Pattaya', sans-serif;
+    --red:#F01212;
+    --red2: #F93030;
+    --white: #ffffff;
+    --grey: #C4C4C4;
+    --orange: #F27706;
+}
+
+@media(max-width: 412px){
+    header{
+        width: 100vw;
+        height: 20vh;
+        font-family: var(--logo-font );
+        color: var(--white);
+        padding-top: 10%;
+        padding-left: 6%;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        width: 15vw;
+    }
+    .logo img{
+        width: 35vw;
+    }
+    .logo h1{
+        place-self: end;
+        font-size: 8vw;
+        font-weight: 400;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 65vh;
+        font-family: var(--text-font);
+        color: var(--white);
+        gap: 15%;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        width: 65vw;
+        padding-left: 6%;
+        padding-top: 12%;
+    }
+    .text h2{
+        width: 70vw;
+        font-size: 10vw;
+    }
+    .text p{
+        font-size: 4vw;
+        width: 85vw;
+    }
+
+    .login{
+        width: 95vw;
+        height: 35vh;
+        padding-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        gap: 5%;
+    }
+
+    #email{
+        border-style: none;
+        background-color: transparent;
+    }
+    #email::placeholder{
+        color: var(--white);
+        font-size: large;
+    }
+    .email{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        gap: 5%;
+        padding-bottom: 3%;
+    }
+    .email::after{
+        content: '';
+        width: 95%;
+        height: 1px;
+        position: absolute;
+        background-color: var(--white);
+        bottom: 0;
+        display: flex;
+        justify-self: center;
+    }
+
+    #password{
+        border-style: none;
+        background-color: transparent;
+    }
+    #password::placeholder{
+        color: var(--white);
+        font-size: large;
+    }
+    .password{
+        position: relative;
+        display: flex;
+        flex-direction: row;    
+        gap: 5%;
+        padding-bottom: 3%;
+    }
+    .password::after{
+        content: '';
+        width: 95%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        background-color: var(--white);
+        display: flex;
+        justify-self: center;
+    }
+
+    .entrar{
+        width: 80vw;
+        height: 6vh;
+        background-color: var(--white);
+        color:var(--orange);
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        border-radius: 10px;
+    }
+    .entrar h2{
+        font-weight: 600;
+        font-size: large;
+    }
+
+    .forgot_password{
+        display: flex;
+        flex-direction: row-reverse;
+        font-weight: 600;
+        padding-right: 4%;
+    }
+
+    footer{
+        width: 100vw;
+        height: 15vh;
+        font-family: var(--text-font);
+        display: flex;
+        justify-content: center;
+    }
+
+    .create {
+        width: 55vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        color: var(--white);
+        gap: 4%;
+    }
+
+}
