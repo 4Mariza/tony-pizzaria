@@ -41,7 +41,7 @@ body{
 
     main{
         width: 100vw;
-        height: 60vh;
+        height: 80vh;
         font-family: var(--text-font);
     }
 
@@ -117,12 +117,29 @@ body{
         font-weight: 600;
     }
 
+    .slide{
+        position: absolute;
+        place-self: end;
+        right: 8vw;
+        transform: translateY(80px);
+        padding: 4px;
+        font-size: 25px;
+        z-index: 1;
+    }
+
     .sabores{
         display: flex;
         flex-direction: row;
         padding-top: 3%;
         padding-right: 8%;
         gap: 3%;
+        overflow: hidden;
+    }
+    .sabores::-webkit-scrollbar{
+        display: none;
+    }
+    .sabores img{
+        height: 100%;
     }
 
     .pizzas{
@@ -220,5 +237,107 @@ body{
 
     .pizza__recomendada:hover > .img__info{
         transform: translateY(0%);
+    }
+
+    .bebidas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5%;
+        width: 100vw;
+        height: 25vh;
+    }
+
+    .bebidas p{
+        font-weight: 600;
+        color: var(--white);
+        padding-left: 5%;
+    }
+
+    .bebida{
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        height: 10vh;
+        background-color: var(--white);
+        place-self: center;
+        border-radius: 10px;
+    }
+    .bebida img{
+        display: flex;
+        place-self: center;
+        width: 12vw;
+        height: 8vh;
+    }
+
+    .bebida__descricao{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        place-content: end;
+    }
+
+    .bebida__descricao p{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 6vh;
+        color: black;
+        font-size: medium;
+        font-weight: 400;
+        place-content: center;
+    }
+    .bebida__descricao span{
+        padding-left: 3%;
+        font-weight: 600;
+    }
+    
+    .preco{
+        display: flex;
+        place-self: center;
+        padding-top: 10%;
+    }
+
+    #preco{
+        display: flex;
+        flex-direction: row ;
+        justify-content: center;
+        width: 15vw;
+        height: 2vh;
+        background-color: var(--red);
+        place-self: end;
+        border-radius: 10px;
+        padding-left: 0%;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        height: 10vh;
+        font-family: var(--text-font);
+    }
+
+    .barra{
+        width: 100vw;
+        height: 10vh;
+        background-color: var(--orange);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10%;
+        color: var(--white);
+        font-size: medium;
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        place-self: center;
+    }
+    .item img{
+        width: 5.5vw;
+        height: 2.5vh;
     }
 }

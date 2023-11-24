@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, transparent 0%, #F27706 100%, #FC7900 100%), url(../img/pizza\ peperoni.png);
+    background-position: center;
+    background-size: contain;
+    font-family: var(--text-font);
+}
+
+:root{
+    --text-font: 'Roboto', sans-serif;
+    --logo-font:'Pattaya', sans-serif;
+    --red:#F01212;
+    --red2: #F93030;
+    --white: #ffffff;
+    --grey: #C4C4C4;
+    --orange: #F27706;
+}
+
+@media(max-width: 412px){
+    header{
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .criar__conta{
+        width: 100vw;
+        height:10vh;
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+        gap: 5%;
+        color: var(--white);
+        font-weight: 600;
+        font-size: larger;
+        padding-left: 5%;
+    }
+
+    .criar__conta img{
+        width: 4vw;
+        height: 3vh;
+    }
+
+    .foto__perfil{
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .circulo__foto{
+        display: flex;
+        justify-content: center;
+        width: 35vw;
+        height: 16vh;
+        background-color: var(--grey);
+        border-radius: 100%;
+        position: relative;
+        place-self: center;
+    }
+    .circulo__foto img{
+        width: 25vw;
+        height: 12vh;
+        place-self: center;
+    }
+
+    .circulo__adicionar{
+        width: 12vw;
+        height: 6vh;
+        border-radius: 100%;
+        background-color: var(--red2);
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        position: absolute;
+        top:22%;
+        left: 60%;
+    }
+    .circulo__adicionar img{
+        width: 8vw;
+        height: 3.5vh;
+    }
+
+    main{
+        width: 100vw;
+        height: 70vh;
+        background-color: var(--white);
+        border-radius: 45px;
+    }
+
+    .cadastro{
+        width: 100vw;
+        height: 60vh;
+        background-color: var(--white);
+        border-radius: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .rotulo{
+        padding-left: 5%;
+    }
+
+    #campo{
+        border-style: none;
+        background-color: transparent;
+    }
+
+}
