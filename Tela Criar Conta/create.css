@@ -19,8 +19,9 @@ body{
     --red:#F01212;
     --red2: #F93030;
     --white: #ffffff;
-    --grey: #C4C4C4;
+    --grey: #999999;
     --orange: #F27706;
+    --green: #199570;
 }
 
 @media(max-width: 412px){
@@ -85,6 +86,7 @@ body{
     .circulo__adicionar img{
         width: 8vw;
         height: 3.5vh;
+        cursor: pointer;
     }
 
     main{
@@ -102,16 +104,60 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 5%;
+        gap: 4%;
+        padding-left: 5%;
     }
 
     .rotulo{
         padding-left: 5%;
+        color: var(--grey);
+        font-size: large;
     }
 
     #campo{
         border-style: none;
         background-color: transparent;
+        cursor: text;
+    }
+
+    .input{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        gap: 5%;
+        padding-bottom: 3%;
+    }
+    .input::after{
+        content: '';
+        width:90%;
+        height: 1px;
+        position: absolute;
+        background-color: black;
+        bottom: 0;
+        display: flex;
+        justify-self: center;
+    }
+
+    .cadastrar{
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .botao__criar{
+        width: 90vw;
+        height: 7vh;
+        display: flex;
+        background-color: var(--green);
+        place-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-size: larger;
+        font-weight: 700;
+        border-radius: 10px;
+        cursor: pointer;
     }
 
 }

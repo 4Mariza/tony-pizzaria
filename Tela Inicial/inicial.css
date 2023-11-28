@@ -91,6 +91,7 @@ body{
         place-items: center;
         border-radius: 10px;
         place-self: end;
+        cursor: pointer;
     }
 
 }

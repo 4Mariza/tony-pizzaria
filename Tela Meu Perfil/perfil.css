@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, transparent 0%, #F27706 100%, #FC7900 100%), url(../img/pizza\ peperoni.png);
+    background-position: center;
+    background-size: contain;
+    font-family: var(--text-font);
+}
+
+:root{
+    --text-font: 'Roboto', sans-serif;
+    --logo-font:'Pattaya', sans-serif;
+    --red:#F01212;
+    --red2: #F93030;
+    --white: #ffffff;
+    --grey: #999999;
+    --orange: #F27706;
+    --light-pink:#F4E2D1;
+    --green: #199570;
+}   
+
+    @media (max-width:412px){
+        header{
+            width: 100vw;
+            height: 20vh;
+        }
+
+        .ver__conta{
+            width: 100vw;
+            height:10vh;
+            display: flex;
+            flex-direction: row;
+            place-items: center;
+            gap: 5%;
+            color: var(--white);
+            font-weight: 600;
+            font-size: larger;
+            padding-left: 5%;
+        }
+        
+        .foto__perfil{
+            width: 100vw;
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        #foto{
+            width: 33vw;
+            height: 15vh;
+            place-self: center;
+        }
+
+        .circulo__editar{
+            width: 12vw;
+            height: 6vh;
+            border-radius: 100%;
+            background-color: var(--red2);
+            display: flex;
+            justify-content: center;
+            place-items: center;
+            position: absolute;
+            top:22%;
+            left: 60%;
+        }
+        .circulo__editar img{
+            width: 8vw;
+            height: 3.5vh;
+            cursor: pointer;
+        }
+
+        main{
+            width: 100vw;
+            height: 60vh;
+            background-color: var(--white);
+            border-radius: 45px;
+        }
+
+        .informacoes__perfil{
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 60vh;
+        }
+
+        .nome_localizacao{
+            display: flex;
+            flex-direction: column;
+            width: 65vw;
+            height: 10vh;
+            justify-content: center;
+            place-items: center;
+            place-self: center;
+            padding-top: 26%;
+        }
+        .nome_localizacao span{
+            color: var(--grey);
+        }
+
+        .infos{
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 60vh;
+            justify-content: center;
+            place-items: center;
+            gap: 4%;
+        }
+
+        .dados{
+            display: flex;
+            flex-direction: row;
+            width: 90vw;
+            height: 10vh;
+            place-items: center;
+            gap: 5%;
+            padding-left: 5%;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: var(--light-pink);
+        }
+        .fundo_icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            place-items: center;
+            width: 13vw;
+            height: 6vh;
+            background-color:var(--light-pink);
+            border-radius: 100%;
+            cursor: pointer;
+        }
+        .fundo_icon img{
+            width: 9vw;
+            cursor: pointer;
+        }
+
+        .dado p{
+            color: var(--grey);
+        }
+
+        footer{
+            width: 100vw;
+            height: 20vh;
+            background-color: var(--white);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            place-items: center end;
+        }
+
+        .botao__sair{
+            display: flex;
+            flex-direction: row;
+            width: 90vw;
+            height: 7vh;
+            background-color: var(--red);
+            place-items: center;
+            gap: 5%;
+            color: var(--white);
+            padding-left: 5%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .botao__sair img{
+            width: 10vw;
+            height: 4vh;
+        }
+    }
