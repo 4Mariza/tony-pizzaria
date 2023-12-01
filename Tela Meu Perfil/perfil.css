@@ -7,10 +7,11 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to top, transparent 0%, #F27706 100%, #FC7900 100%), url(../img/pizza\ peperoni.png);
-    background-position: center;
-    background-size: contain;
     font-family: var(--text-font);
+    background-image: linear-gradient(to top, transparent 0%, #F27706 100%, #FC7900 100%), url(../img/pizza\ peperoni.png);
+    background-position-x: center;
+    background-size: contain;
+    background-repeat: repeat-y;
 }
 
 :root{
@@ -55,6 +56,7 @@ body{
             width: 33vw;
             height: 15vh;
             place-self: center;
+            z-index: +1;
         }
 
         .circulo__editar{
@@ -68,6 +70,7 @@ body{
             position: absolute;
             top:22%;
             left: 60%;
+            z-index: +2;
         }
         .circulo__editar img{
             width: 8vw;
@@ -77,16 +80,21 @@ body{
 
         main{
             width: 100vw;
-            height: 60vh;
+            height: 80vh;
+            border-radius: 20px;
             background-color: var(--white);
-            border-radius: 45px;
+            display: flex;
+            flex-direction: column;
+            place-items: center;
         }
 
         .informacoes__perfil{
             display: flex;
             flex-direction: column;
+            background-color: var(--white);
             width: 100vw;
-            height: 60vh;
+            height: 65vh;
+            border-radius: 45px;
         }
 
         .nome_localizacao{
@@ -143,16 +151,6 @@ body{
 
         .dado p{
             color: var(--grey);
-        }
-
-        footer{
-            width: 100vw;
-            height: 20vh;
-            background-color: var(--white);
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            place-items: center end;
         }
 
         .botao__sair{

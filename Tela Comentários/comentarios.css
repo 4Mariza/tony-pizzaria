@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--text-font);
+    background-image: url(../img/pizza4\ 1.png);
+    background-position-x: center;
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+:root{
+    --text-font: 'Roboto', sans-serif;
+    --logo-font:'Pattaya', sans-serif;
+    --red:#F01212;
+    --red2: #F93030;
+    --white: #ffffff;
+    --grey: #999999;
+    --orange: #F27706;
+    --light-pink:#F4E2D1;
+    --green: #199570;
+    --green2: #23CB98;
+    --caixa_comentario: #F5F5F5;
+    --texo_comentario: #AEA6A6;
+}  
+
+@media (max-width: 421px){
+    header{
+        width: 100vw;
+        height: 25vh;
+    }
+
+    .voltar{
+        width: 100vw;
+        height: 40%;
+        display: flex;
+        place-items: center;
+        padding-left: 5%;
+    }
+    .voltar img{
+        height: 25%;
+    }
+
+    main{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .informacoes__pizza{
+        width: 100%;
+        height: 100%;
+        background-color: var(--white);
+        padding-left: 5%;
+        border-radius: 45px;
+    }
+
+    .nome__fav{
+        width: 100%;
+        height: 18%;
+        display: flex;
+        flex-direction: row;
+        gap: 8%;
+        padding-top: 5%;
+        place-items: center;
+    }
+    .nome__fav span{
+        width: 80%;
+        height: 80%;
+        font-size: xx-large;
+        color: black;
+        font-weight: 700;
+        opacity: 80%;
+        place-self: end;
+    }
+    .nome__fav img{
+        width: 8%;
+        height: 22%;
+        place-self: center;
+    }
+
+    .preco__descricao{
+        width: 90vw;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+    .preco__descricao h2{
+        color: var(--green2);
+        font-size: xx-large;
+    }
+    .preco__descricao p{
+        color: var(--grey);
+    }
+
+    .fav_stars{
+        display: flex;
+        flex-direction: row;
+        width:55%;
+        height: 15%;
+    }
+    .fav_stars img{
+        width: 18%;
+        height: 100%;
+    }
+
+    .rotulo_comentario{
+        width: 100%;
+        height: 5%;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+    }
+    .rotulo_comentario img{
+        width: 9%;
+        height: 75%;
+    }
+    .rotulo_comentario span{
+        font-size: larger;
+        opacity: 80%;
+        font-weight: 750;
+    }
+
+    .comentarios{
+        width: 95%;
+        height: 42%;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .caixa{
+        width: 100%;
+        height: 30vh;
+        border-radius: 10px;
+        background-color: var(--caixa_comentario);
+    }
+
+    .info__usuario{
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+        color: var(--texo_comentario);
+        gap: 5%;
+        padding-left: 3%;
+        padding-top: 3%;
+    }
+    .info__usuario img{
+        height: 100%;
+    }
+
+    .nome__data{
+        width: 45%;
+    }
+
+    .fav_stars_comentario{
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding-right: 5%;
+    }
+
+    .texto{
+        width: 100%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--texo_comentario);
+        padding: 3%;
+        gap: 3%;
+    }
+    #titulo{
+        font-weight: 600;
+    }
+}
