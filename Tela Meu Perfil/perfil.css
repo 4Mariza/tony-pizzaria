@@ -26,7 +26,166 @@ body{
     --green: #199570;
 }   
 
-    @media (max-width:412px){
+@media(min-width: 737px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(to top, transparent 0%, #F27706 100%, #FC7900 100%), url(../img/pizza_create.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: var(--text-font);
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+
+    header{
+        width: 100vw;
+        height: 26vh;
+    }
+
+    .ver__conta{
+        width: 100vw;
+        height:15vh;
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+        gap: 5%;
+        color: var(--white);
+        font-weight: 600;
+        font-size: larger;
+        padding-left: 5%;
+    }
+    
+    .foto__perfil{
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    #foto{
+        width: 7%;
+        height: 65%;
+        place-self: center;
+        z-index: +1;
+    }
+
+    .circulo__editar{
+        width: 3vw;
+        height: 6vh;
+        border-radius: 100%;
+        background-color: var(--red2);
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        position: absolute;
+        top:22%;
+        left: 53%;
+        z-index: +2;
+    }
+    .circulo__editar img{
+        width: 1.7vw;
+        height: 3.5vh;
+        cursor: pointer;
+    }
+
+    main{
+        width: 35vw;
+        height: 65vh;
+        border-radius: 20px;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+
+    .informacoes__perfil{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--white);
+        width: 100%;
+        height: 80%;
+        border-radius: 45px;
+    }
+
+    .nome_localizacao{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 10vh;
+        justify-content: center;
+        place-items: center;
+        place-self: center;
+        padding-top: 10%;
+    }
+    .nome_localizacao span{
+        color: var(--grey);
+    }
+
+    .infos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60vh;
+        justify-content: center;
+        place-items: center;
+        gap: 4%;
+    }
+
+    .dados{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 10vh;
+        place-items: center;
+        gap: 5%;
+        padding-left: 5%;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: var(--light-pink);
+    }
+    .fundo_icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        width: 11%;
+        height: 6vh;
+        background-color:var(--light-pink);
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    .fundo_icon img{
+        width: 55%;
+        cursor: pointer;
+    }
+
+    .dado p{
+        color: var(--grey);
+    }
+
+    .botao__sair{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 8vh;
+        background-color: var(--red);
+        place-items: center;
+        gap: 5%;
+        color: var(--white);
+        padding-left: 5%;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .botao__sair img{
+        width: 7%;
+        height: 4vh;
+    }
+}
+
+    @media (max-width:736px){
         header{
             width: 100vw;
             height: 20vh;

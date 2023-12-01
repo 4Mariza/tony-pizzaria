@@ -20,7 +20,13 @@ body{
     --orange: #F27706;
 }
 
-@media(max-width: 412px){
+@media (min-width:737px){
+    header{
+        
+    }
+}
+
+@media(max-width: 736px){
     header{
         width: 100vw;
         height: 10vh;

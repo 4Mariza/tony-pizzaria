@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./create.js"></script>
+    <script src="./create.js" defer></script>
     <link rel="stylesheet" href="./create.css">
     <title>Criar Conta</title>
 </head>
@@ -51,7 +53,7 @@
                 <p>Telefone</p>
             </div>
             <div class="input">
-                <input type="telefone" placeholder="" name="telefone" id="campo">
+                <input type="telefone" placeholder=""  maxlength="15" onkeyup="handlePhone(event)"  id="campo">
             </div>
         </div>
         <div class="cadastrar">
