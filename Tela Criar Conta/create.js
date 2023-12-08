@@ -12,3 +12,27 @@ const handlePhone = (event) => {
     value = value.replace(/(\d)(\d{4})$/,"$1-$2")
     return value
   }
+
+  async function cadastrarUsuario(usuario){
+    const url = 'http://localhost:8080/usuarios'
+    const options = {
+        method:'POST',
+        headers:{
+            'Content-Type':'application/json'
+        },
+        body: JSON.stringify(usuario)
+    }
+    const response = await fetch (url,options)
+    console.log(response.ok)
+    return response.ok
+}
+
+// TESTE
+const usuarioNovo = {
+    nome:'jose',
+    email:'jose@gmail.com',
+    telefone:'(11)94577-1205',
+    foto:'../img/',
+    senha:'abcdef74'
+}
+cadastrarUsuario(usuarioNovo)
