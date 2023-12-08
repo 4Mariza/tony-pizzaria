@@ -24,6 +24,10 @@ body{
     --green: #199570;
 }
 
+#img-perfil{
+    display: none;
+}
+
 @media(min-width: 737px){
     body{
         width: 100vw;
@@ -130,10 +134,16 @@ body{
         font-size: large;
     }
 
-    #campo{
-        border-style: none;
+    .campo{
+        outline: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
         background-color: transparent;
         cursor: text;
+        width:90%;
+        border-color: rgba(0, 0, 0, 0.1);
+        height: 30px;
     }
 
     .input{
@@ -143,17 +153,7 @@ body{
         gap: 5%;
         padding-bottom: 2%;
     }
-    .input::after{
-        content: '';
-        width:90%;
-        height: 1px;
-        position: absolute;
-        background-color: black;
-        opacity: 30%;
-        bottom: 0;
-        display: flex;
-        justify-self: center;
-    }
+
 
     .cadastrar{
         width: 90%;

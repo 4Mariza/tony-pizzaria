@@ -94,6 +94,7 @@ body{
         border-style: none;
         background-color: transparent;
         width: 100%;
+        outline: none;
     }
     #email::placeholder{
         color: var(--white);
@@ -123,6 +124,7 @@ body{
         border-style: none;
         background-color: transparent;
         width: 100%;
+        outline: none;
     }
     #password::placeholder{
         color: var(--white);

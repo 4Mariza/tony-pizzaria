@@ -16,10 +16,12 @@
         </div>
         <div class="foto__perfil">
             <div class="circulo__foto">
-                <img src="../img/Person.png" alt="" >
+                <img id="img-user" src="../img/Person.png" alt="" >
             </div>
             <div class="circulo__adicionar">
-                <img src="../img/Add a photo.png" alt="">
+                <label for="img-perfil"><img src="../img/Add a photo.png" alt=""></label>
+                <input id="img-perfil" type="file">
+                
             </div>
         </div>
     </header>
@@ -29,37 +31,37 @@
                 <p>Nome do usuário</p>
             </div>
             <div class="input">
-                <input type="nome" placeholder="" name="nome" id="campo">
+                <input type="text" placeholder="" name="nome" class="campo" id="nome">
             </div>
             <div class="rotulo">
                 <p>Endereço de email</p>
             </div>
             <div class="input">
-                <input type="email" placeholder="" name="email" id="campo">
+                <input type="email" placeholder="" name="email" class="campo" id="email">
             </div>
             <div class="rotulo">
                 <p>Senha</p>
             </div>
             <div class="input">
-                <input type="senha" placeholder="" name="senha" id="campo">
+                <input type="password" placeholder="" name="senha" class="campo" id="senha">
             </div>
             <div class="rotulo">
                 <p>Confirmação de senha</p>
             </div>
             <div class="input">
-                <input type="confirmacao" placeholder="" name="confirmacao" id="campo">
+                <input type="password" placeholder="" name="confirmacao" class="campo" id="confirmacao">
             </div>
             <div class="rotulo">
                 <p>Telefone</p>
             </div>
             <div class="input">
-                <input type="telefone" placeholder=""  maxlength="15" onkeyup="handlePhone(event)"  id="campo">
+                <input type="text" placeholder=""  maxlength="15" onkeyup="handlePhone(event)"  class="campo" id="telefone">
             </div>
         </div>
         <div class="cadastrar">
-            <div class="botao__criar">
-                <span>Criar Conta</span>
-            </div>
+            <button id="botao-criar" class="botao__criar">
+                Criar Conta
+            </button>
         </div>
     </main>
     <footer>
