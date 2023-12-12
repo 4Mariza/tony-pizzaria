@@ -133,11 +133,12 @@ body{
 
     .sabores{
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
         padding-top: 3%;
         padding-right: 8%;
         gap: 3%;
-        overflow: hidden;
+        overflow-x: auto;
+        flex-flow: row nowrap;
     }
     .sabores::-webkit-scrollbar{
         display: none;
@@ -148,8 +149,8 @@ body{
 
     .pizzas{
         position: relative;
-        overflow: hidden;
         transition: all 0.5s linear;
+ 
     }
     .pizzas img{
         width: 45vw;

@@ -20,14 +20,10 @@ const organizarPizzasFavoritas = async ()  => {
     const response = await fetch(url)
     const pizza = await response.json()
 
-    let pizzas = []
-    pizzas.push(pizza)
-
-    console.log(pizza);
-
     const container = document.getElementById('sabores')
 
-    pizzas.forEach(item => {
+    pizza.pizzasArray.forEach(item => {
+        console.log(item);
         const cardDiv = document.createElement('div')
         cardDiv.classList.add('pizzas')
         cardDiv.innerHTML = `
