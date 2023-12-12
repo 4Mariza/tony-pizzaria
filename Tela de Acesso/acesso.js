@@ -18,5 +18,10 @@ login.addEventListener('submit', async (e) =>{
 
     console.log(data);
     if(response.status == 200)
+        localStorage.setItem('user', data.nome)
+        localStorage.setItem('telefone', data.telefone)
+        localStorage.setItem('email', data.email)
+        localStorage.setItem('localizacao', data.localizacao)
+        localStorage.setItem('img', data.foto)
         window.location.href = "../Tela Home/home.html"
 })

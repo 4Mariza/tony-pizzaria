@@ -2,35 +2,35 @@
 
 const botao = document.getElementById("botao")
 const imgPerfil = document.getElementById("img-perfil")
+const botaoVoltar = document.getElementById('voltar')
 
-const getData = async () => {
-    const local = document.getElementById("local")
-    const foto = document.getElementById('foto')
-    const telefone = document.getElementById("telefone")
-    const nome = document.getElementById("nome")
-    const endereco = document.getElementById("endereco")
-    const email = document.getElementById("email")
+const local = document.getElementById("local")
+const foto = document.getElementById('foto')
+const telefone = document.getElementById("telefone")
+const nome = document.getElementById("nome")
+const endereco = document.getElementById("endereco")
+const email = document.getElementById("email")
 
-    const url = 'http://localhost:8080/usuarios'
-    const response = await fetch(url)
-    const usuario = await response.json()
-    
-    foto.style.backgroundImage = `url(..${usuario.foto})`
-    nome.textContent = usuario.nome
-    local.textContent = ""
-    telefone.textContent = usuario.telefone
-    email.textContent = usuario.email
-    endereco.textContent = usuario.endereco
+  const montarPerfil = () => {
+    const usuario = localStorage.getItem('user')
+    const telefoneUsuario = localStorage.getItem('telefone')
+    const emailUsuario = localStorage.getItem('email')
+    const localizacao = localStorage.getItem('localizacao')
+    const img = localStorage.getItem('img')
 
-    console.log( usuario);
-    return usuario
-}
+    console.log(usuario);
 
-console.log(getData())
-
-let foto
-
-imgPerfil.addEventListener("change", () => {
+    nome.textContent = `${usuario}`
+    foto.src= `${img}`
+    telefone.textContent = `${telefoneUsuario}`
+    email.textContent = `${emailUsuario}`
+    endereco.textContent = `${localizacao}`
+  }
+  
+  montarPerfil()
+  
+  imgPerfil.addEventListener("change", () => {
+    let foto
     let file = imgPerfil.files[0]
   
     if (file) {
@@ -45,4 +45,8 @@ imgPerfil.addEventListener("change", () => {
   
       reader.readAsDataURL(file);
     } 
+  })
+
+  botaoVoltar.addEventListener('click', () =>{
+    window.location.href = '../Tela Home/home.html'
   })

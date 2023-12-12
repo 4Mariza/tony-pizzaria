@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 const imgPerfil = document.getElementById("img-perfil")
 const button = document.getElementById("botao-criar")
@@ -8,7 +8,7 @@ let foto
 const handlePhone = (event) => {
   let input = event.target;
   input.value = phoneMask(input.value);
-};
+}
 
 const phoneMask = (value) => {
   if (!value) return "";
@@ -16,7 +16,7 @@ const phoneMask = (value) => {
   value = value.replace(/(\d{2})(\d)/, "($1) $2");
   value = value.replace(/(\d)(\d{4})$/, "$1-$2");
   return value;
-};
+}
 
 async function cadastrarUsuario(usuario) {
   const url = "http://localhost:8080/usuarios"
@@ -43,14 +43,14 @@ imgPerfil.addEventListener("change", () => {
       const img = document.getElementById("img-user")
       foto = render.result
       img.src = foto
-    });
+    })
 
-    reader.readAsDataURL(file);
+    reader.readAsDataURL(file)
   } 
 })
 
 button.addEventListener("click", () => {
-  const senha = document.getElementById("senha").value;
+  const senha = document.getElementById("senha").value
 
   if (senha == document.getElementById("confirmacao").value) {
     const user = {
@@ -61,7 +61,7 @@ button.addEventListener("click", () => {
       senha,
     }
 
-    cadastrarUsuario(user);
+    cadastrarUsuario(user)
   }else {
     alert('Senhas devem ser iguais!!')
   }

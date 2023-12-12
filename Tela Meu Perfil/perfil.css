@@ -61,6 +61,10 @@ body{
         font-size: larger;
         padding-left: 5%;
     }
+
+    #voltar{
+        cursor: pointer;
+    }
     
     .foto__perfil{
         width: 100vw;
@@ -209,6 +213,10 @@ body{
             font-weight: 600;
             font-size: larger;
             padding-left: 5%;
+        }
+
+        #voltar{
+            cursor: pointer;
         }
         
         .foto__perfil{
