@@ -58,7 +58,7 @@ body{
     main{
         width: 100vw;
         height: 0vh;
-        background-color: #199570;
+        background-color: #df8a3b;
     }
 
     .informacoes__pizza{
@@ -141,7 +141,7 @@ body{
         gap: 2%;
         padding-left: 3%;
         place-items: center;
-        background-color:rgba(0,128,2, 0.2);
+        background-color:#df8a3b7c;
     }
     .rotulo_comentario img{
         width: 2.2%;
@@ -158,7 +158,7 @@ body{
         height: 90%;
         display: flex;
         flex-direction: column;
-        background-color:rgba(0,128,2, 0.2);
+        background-color:#df8a3b85;
         gap: 5%;
         padding-left: 5%;
     }

@@ -26,6 +26,10 @@ body{
     --green: #199570;
 }   
 
+#img-perfil{
+    display: none;
+}
+
 @media(min-width: 737px){
     body{
         width: 100vw;
@@ -66,28 +70,28 @@ body{
     }
 
     #foto{
-        width: 7%;
+        width: 6%;
         height: 65%;
         place-self: center;
         z-index: +1;
     }
 
     .circulo__editar{
-        width: 3vw;
-        height: 6vh;
+        width: 2.5vw;
+        height: 5vh;
         border-radius: 100%;
         background-color: var(--red2);
         display: flex;
         justify-content: center;
         place-items: center;
         position: absolute;
-        top:22%;
-        left: 53%;
+        top:24%;
+        left: 51%;
         z-index: +2;
     }
     .circulo__editar img{
-        width: 1.7vw;
-        height: 3.5vh;
+        width: 1.5vw;
+        height: 3vh;
         cursor: pointer;
     }
 
@@ -169,7 +173,7 @@ body{
     .botao__sair{
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 31vw;
         height: 8vh;
         background-color: var(--red);
         place-items: center;
@@ -178,6 +182,9 @@ body{
         padding-left: 5%;
         border-radius: 10px;
         cursor: pointer;
+        font-size: larger;
+        font-weight: 500;
+        border-style: none;
     }
     .botao__sair img{
         width: 7%;
@@ -324,6 +331,9 @@ body{
             padding-left: 5%;
             border-radius: 10px;
             cursor: pointer;
+            font-size: larger;
+            font-weight: 500;
+            border-style: none;
         }
         .botao__sair img{
             width: 10vw;

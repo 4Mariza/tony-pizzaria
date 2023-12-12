@@ -161,9 +161,9 @@ body{
         place-items: center;
         border-radius: 10px;
         cursor: pointer;
-    }
-    .entrar h2{
         font-size: larger;
+        font-weight: 600;
+        border-style: none;
     }
     
     .forgot_password{

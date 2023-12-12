@@ -1,7 +1,7 @@
 "use strict";
 
-const imgPerfil = document.getElementById("img-perfil");
-const button = document.getElementById("botao-criar");
+const imgPerfil = document.getElementById("img-perfil")
+const button = document.getElementById("botao-criar")
 
 let foto
 
@@ -19,35 +19,35 @@ const phoneMask = (value) => {
 };
 
 async function cadastrarUsuario(usuario) {
-  const url = "http://localhost:8080/usuarios";
+  const url = "http://localhost:8080/usuarios"
   const options = {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(usuario),
-  };
-  const response = await fetch(url, options);
-  console.log(response.ok);
-  return response.ok;
+  }
+  const response = await fetch(url, options)
+  console.log(response.ok)
+  return response.ok
 }
 
 imgPerfil.addEventListener("change", () => {
-  let file = imgPerfil.files[0];
+  let file = imgPerfil.files[0]
 
   if (file) {
-    const reader = new FileReader();
+    const reader = new FileReader()
 
     reader.addEventListener("load", (e) => {
       const render = e.target;
-      const img = document.getElementById("img-user");
+      const img = document.getElementById("img-user")
       foto = render.result
-      img.src = foto;
+      img.src = foto
     });
 
     reader.readAsDataURL(file);
   } 
-});
+})
 
 button.addEventListener("click", () => {
   const senha = document.getElementById("senha").value;
@@ -59,11 +59,11 @@ button.addEventListener("click", () => {
       telefone: document.getElementById("telefone").value,
       foto,
       senha,
-    };
+    }
 
     cadastrarUsuario(user);
   }else {
     alert('Senhas devem ser iguais!!')
   }
-});
+})
 

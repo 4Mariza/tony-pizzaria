@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./perfil.css">
-    <title>Meu Perfil</title>
+    <script src="./perfil.js" defer></script>
+    <title>Tony Pizzaria</title>
 </head>
 <body>
     <header>
@@ -15,15 +16,18 @@
         <div class="foto__perfil">
                 <img src="../img/Ellipse 1.png" alt="" id="foto">
             <div class="circulo__editar">
-                <img src="../img/Mode edit.png" alt="">
+                <label for="img-perfil">
+                    <img src="../img/Mode edit.png" alt="">
+                </label>
+                <input id="img-perfil" type="file">
             </div>
         </div>
     </header>
     <main>
         <div class="informacoes__perfil">
             <div class="nome_localizacao">
-                <h2>Nome do usuário</h2>
-                <span>local</span>
+                <h2 id="nome">Nome do usuário</h2>
+                <span id="local">local</span>
             </div>
             <div class="infos">
                 <div class="dados">
@@ -32,7 +36,7 @@
                     </div>
                     <div class="dado">
                         <p>Telefone</p>
-                        <span>(11)d1111111</span>
+                        <span id="telefone">(11)d1111111</span>
                     </div>
                 </div>
                 <div class="dados">
@@ -41,7 +45,7 @@
                     </div>
                     <div class="dado">
                         <p>E-mail</p>
-                        <span>ajksndkand@bdnjks</span>
+                        <span id="email">ajksndkand@bdnjks</span>
                     </div>
                 </div>
                 <div class="dados">
@@ -50,14 +54,16 @@
                     </div>
                     <div class="dado">
                         <p>Localização</p>
-                        <span>andwddad</span>
+                        <span id="endereco">andwddad</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="botao__sair">
-           <img src="../img/Vector (3).png" alt="">
-           <span>SAIR DO SISTEMA</span>
+        <div>
+           <button class="botao__sair" id="botao">
+                <img src="../img/Vector (3).png" alt="">
+                SAIR DO SISTEMA
+            </button>
     </main>
     <footer>
         </div>
