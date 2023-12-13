@@ -121,28 +121,15 @@ body{
         font-weight: 600;
     }
 
-    .slide{
-        position: absolute;
-        place-self: end;
-        right: 8vw;
-        transform: translateY(80px);
-        padding: 4px;
-        font-size: 25px;
-        z-index: 1;
-    }
-
     .sabores{
         display: flex;
-        /* flex-direction: row; */
         padding-top: 3%;
         padding-right: 8%;
         gap: 3%;
         overflow-x: auto;
         flex-flow: row nowrap;
     }
-    .sabores::-webkit-scrollbar{
-        display: none;
-    }
+   
     .sabores img{
         height: 100%;
     }
@@ -192,6 +179,7 @@ body{
         padding-left: 5%;
         display: flex;
         flex-direction: column;
+        overflow: auto;
     }
     .recomendados p{
         font-weight: 600;
@@ -203,11 +191,12 @@ body{
         padding-top: 3%;
         padding-right: 8%;
         gap: 3%;
+        overflow-x: auto;
+        flex-flow: row nowrap;
     }
 
     .pizza__recomendada{
         position: relative;
-        overflow: hidden;
         transition: all 0.5s linear;
     }
 
@@ -219,7 +208,7 @@ body{
     .pizza__recomendada p{
         position: absolute;
         z-index: 0;
-        top:50%;
+        top: 35%;
         width: 19vw;
         border-radius: 10px;
         font-size: 16px;
@@ -250,7 +239,8 @@ body{
         justify-content: center;
         gap: 5%;
         width: 100vw;
-        height: 25vh;
+        height: 28vh;
+        overflow: auto;
     }
 
     .bebidas p{
@@ -267,12 +257,13 @@ body{
         background-color: var(--white);
         place-self: center;
         border-radius: 10px;
+        
     }
     .bebida img{
         display: flex;
         place-self: center;
         width: 12vw;
-        height: 8vh;
+        height: 7vh;
     }
 
     .bebida__descricao{
