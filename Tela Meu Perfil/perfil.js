@@ -50,3 +50,7 @@ const email = document.getElementById("email")
   botaoVoltar.addEventListener('click', () =>{
     window.location.href = '../Tela Home/home.html'
   })
+
+  botao.addEventListener('click', ()=>{
+    window.location.href = '../Tela de Acesso/acess.html'
+  })

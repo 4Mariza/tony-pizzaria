@@ -71,6 +71,7 @@ body{
         height: 20vh;
         display: flex;
         justify-content: center;
+        background-color: #199570;
     }
 
     #foto{
@@ -78,6 +79,7 @@ body{
         height: 65%;
         place-self: center;
         z-index: +1;
+        border-radius: 100%;
     }
 
     .circulo__editar{
@@ -231,6 +233,7 @@ body{
             height: 15vh;
             place-self: center;
             z-index: +1;
+            border-radius: 50%;
         }
 
         .circulo__editar{
@@ -339,7 +342,7 @@ body{
             padding-left: 5%;
             border-radius: 10px;
             cursor: pointer;
-            font-size: larger;
+            font-size: medium;
             font-weight: 500;
             border-style: none;
         }

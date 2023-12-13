@@ -20,9 +20,6 @@ body{
     --orange: #F27706;
 }
 
-@media (min-width:737px){
-}
-
 @media(max-width: 736px){
     header{
         width: 100vw;
@@ -39,7 +36,9 @@ body{
         gap: 35%;
     }
     .home img{
-        width: 60px;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
     }
     
     main{

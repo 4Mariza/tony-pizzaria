@@ -3,6 +3,7 @@
 const login = document.getElementById('login')
 const email = document.getElementById('email')
 const senha = document.getElementById('password')
+const botaoCriar = document.getElementById('criar_conta')
 
 login.addEventListener('submit', async (e) =>{
     e.preventDefault()
@@ -23,5 +24,9 @@ login.addEventListener('submit', async (e) =>{
         localStorage.setItem('email', data.email)
         localStorage.setItem('localizacao', data.localizacao)
         localStorage.setItem('img', data.foto)
-        window.location.href = "../Tela Home"
+        window.location.href = "../Tela Home/home.html"
+})
+
+botaoCriar.addEventListener('click', () => {
+    window.location.href = '../Tela Criar Conta/create.html'
 })
